@@ -1,0 +1,6 @@
+framework module Pods_ChallengeSL {
+  umbrella header "Pods-ChallengeSL-umbrella.h"
+
+  export *
+  module * { export * }
+}
