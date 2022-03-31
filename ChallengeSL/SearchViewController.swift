@@ -13,11 +13,9 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            let textFieldCell = UINib(nibName: "ItemTableViewCell", bundle: nil)
-            self.tableView.register(textFieldCell, forCellReuseIdentifier: "itemCell")
-        tableView.dataSource = self
-        tableView.delegate = self
-}
+        let textFieldCell = UINib(nibName: "ItemTableViewCell", bundle: nil)
+        self.tableView.register(textFieldCell, forCellReuseIdentifier: "itemCell")
+    }
 }
 
 extension SearchViewController: UITableViewDataSource {
@@ -32,6 +30,9 @@ extension SearchViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 145
+    }
 }
 
 extension SearchViewController: UITableViewDelegate {
@@ -39,6 +40,13 @@ extension SearchViewController: UITableViewDelegate {
         let vc = DetailsViewController()
         print("que pasa aca")
         self.navigationController?.pushViewController(vc, animated: true)
-    }    
+    }
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        getCategoryID(textValue: searchTexField.text ?? "")
+        return true
+    }
 }
 
