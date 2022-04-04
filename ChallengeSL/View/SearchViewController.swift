@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController {
     @IBOutlet weak var searchTexField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    var service = DataService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ extension SearchViewController: UITableViewDelegate {
 
 extension SearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        getCategoryID(textValue: searchTexField.text ?? "")
+        service.getCategoryID2(textValue: searchTexField.text ?? "")
         return true
     }
 }
