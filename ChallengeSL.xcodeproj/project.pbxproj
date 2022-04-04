@@ -147,6 +147,7 @@
 		77813D1127F37BE400685D70 /* ChallengeSL */ = {
 			isa = PBXGroup;
 			children = (
+				77AA504727FB59000093337A /* View */,
 				77AA504227FB56790093337A /* Model */,
 				77813D1227F37BE400685D70 /* AppDelegate.swift */,
 				77813D1427F37BE400685D70 /* SceneDelegate.swift */,
@@ -154,13 +155,7 @@
 				77813D1B27F37BE500685D70 /* Assets.xcassets */,
 				77813D1D27F37BE500685D70 /* LaunchScreen.storyboard */,
 				77813D2027F37BE500685D70 /* Info.plist */,
-				77813D4427F37DEB00685D70 /* SearchViewController.swift */,
-				77813D4527F37DEB00685D70 /* SearchViewController.xib */,
-				77813D4827F37DFE00685D70 /* DetailsViewController.swift */,
-				77813D4927F37DFE00685D70 /* DetailsViewController.xib */,
 				77813D5027F3C98F00685D70 /* DataService.swift */,
-				77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */,
-				77813D5327F3CD8D00685D70 /* ItemTableViewCell.xib */,
 			);
 			path = ChallengeSL;
 			sourceTree = "<group>";
@@ -190,6 +185,19 @@
 				77AA504527FB56A60093337A /* MultigetModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		77AA504727FB59000093337A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77813D4427F37DEB00685D70 /* SearchViewController.swift */,
+				77813D4527F37DEB00685D70 /* SearchViewController.xib */,
+				77813D4827F37DFE00685D70 /* DetailsViewController.swift */,
+				77813D4927F37DFE00685D70 /* DetailsViewController.xib */,
+				77813D5327F3CD8D00685D70 /* ItemTableViewCell.xib */,
+				77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9B4284557A1F66940DCDE6A9 /* Frameworks */ = {
