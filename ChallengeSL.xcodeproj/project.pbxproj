@@ -24,7 +24,9 @@
 		77813D5127F3C98F00685D70 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D5027F3C98F00685D70 /* DataService.swift */; };
 		77813D5427F3CD8D00685D70 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */; };
 		77813D5527F3CD8D00685D70 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77813D5327F3CD8D00685D70 /* ItemTableViewCell.xib */; };
-		77813D5727F4D9CD00685D70 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D5627F4D9CD00685D70 /* DataModel.swift */; };
+		77813D5727F4D9CD00685D70 /* CategoryPredictorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D5627F4D9CD00685D70 /* CategoryPredictorModel.swift */; };
+		77AA504427FB56940093337A /* HighlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA504327FB56940093337A /* HighlightsModel.swift */; };
+		77AA504627FB56A60093337A /* MultigetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA504527FB56A60093337A /* MultigetModel.swift */; };
 		F6B2FDD3642AF74C0410BDBA /* Pods_ChallengeSL_ChallengeSLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF6856930EE478B8CCFF922 /* Pods_ChallengeSL_ChallengeSLUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +69,9 @@
 		77813D5027F3C98F00685D70 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		77813D5327F3CD8D00685D70 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
-		77813D5627F4D9CD00685D70 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		77813D5627F4D9CD00685D70 /* CategoryPredictorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPredictorModel.swift; sourceTree = "<group>"; };
+		77AA504327FB56940093337A /* HighlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsModel.swift; sourceTree = "<group>"; };
+		77AA504527FB56A60093337A /* MultigetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultigetModel.swift; sourceTree = "<group>"; };
 		97AA8A88D2126D0EC991D863 /* Pods_ChallengeSLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeSLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF6856930EE478B8CCFF922 /* Pods_ChallengeSL_ChallengeSLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeSL_ChallengeSLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC661235818E2546F5516A92 /* Pods-ChallengeSL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeSL.release.xcconfig"; path = "Target Support Files/Pods-ChallengeSL/Pods-ChallengeSL.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		77813D1127F37BE400685D70 /* ChallengeSL */ = {
 			isa = PBXGroup;
 			children = (
+				77AA504227FB56790093337A /* Model */,
 				77813D1227F37BE400685D70 /* AppDelegate.swift */,
 				77813D1427F37BE400685D70 /* SceneDelegate.swift */,
 				77813D1627F37BE400685D70 /* ViewController.swift */,
@@ -156,7 +161,6 @@
 				77813D5027F3C98F00685D70 /* DataService.swift */,
 				77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */,
 				77813D5327F3CD8D00685D70 /* ItemTableViewCell.xib */,
-				77813D5627F4D9CD00685D70 /* DataModel.swift */,
 			);
 			path = ChallengeSL;
 			sourceTree = "<group>";
@@ -176,6 +180,16 @@
 				77813D3527F37BE500685D70 /* ChallengeSLUITestsLaunchTests.swift */,
 			);
 			path = ChallengeSLUITests;
+			sourceTree = "<group>";
+		};
+		77AA504227FB56790093337A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77813D5627F4D9CD00685D70 /* CategoryPredictorModel.swift */,
+				77AA504327FB56940093337A /* HighlightsModel.swift */,
+				77AA504527FB56A60093337A /* MultigetModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9B4284557A1F66940DCDE6A9 /* Frameworks */ = {
@@ -434,8 +448,10 @@
 				77813D1327F37BE400685D70 /* AppDelegate.swift in Sources */,
 				77813D4627F37DEB00685D70 /* SearchViewController.swift in Sources */,
 				77813D1527F37BE400685D70 /* SceneDelegate.swift in Sources */,
-				77813D5727F4D9CD00685D70 /* DataModel.swift in Sources */,
+				77813D5727F4D9CD00685D70 /* CategoryPredictorModel.swift in Sources */,
+				77AA504427FB56940093337A /* HighlightsModel.swift in Sources */,
 				77813D5427F3CD8D00685D70 /* ItemTableViewCell.swift in Sources */,
+				77AA504627FB56A60093337A /* MultigetModel.swift in Sources */,
 				77813D4A27F37DFE00685D70 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
