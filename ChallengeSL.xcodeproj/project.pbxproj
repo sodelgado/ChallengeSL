@@ -147,6 +147,7 @@
 		77813D1127F37BE400685D70 /* ChallengeSL */ = {
 			isa = PBXGroup;
 			children = (
+				77AA504827FB594A0093337A /* ViewModel */,
 				77AA504727FB59000093337A /* View */,
 				77AA504227FB56790093337A /* Model */,
 				77813D1227F37BE400685D70 /* AppDelegate.swift */,
@@ -198,6 +199,13 @@
 				77813D5227F3CD8D00685D70 /* ItemTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		77AA504827FB594A0093337A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9B4284557A1F66940DCDE6A9 /* Frameworks */ = {
