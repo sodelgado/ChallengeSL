@@ -149,6 +149,7 @@
 		77813D1127F37BE400685D70 /* ChallengeSL */ = {
 			isa = PBXGroup;
 			children = (
+				77D184EB27FCAD440063BF5E /* Service */,
 				77AA504827FB594A0093337A /* ViewModel */,
 				77AA504727FB59000093337A /* View */,
 				77AA504227FB56790093337A /* Model */,
@@ -158,7 +159,6 @@
 				77813D1B27F37BE500685D70 /* Assets.xcassets */,
 				77813D1D27F37BE500685D70 /* LaunchScreen.storyboard */,
 				77813D2027F37BE500685D70 /* Info.plist */,
-				77813D5027F3C98F00685D70 /* DataService.swift */,
 			);
 			path = ChallengeSL;
 			sourceTree = "<group>";
@@ -209,6 +209,14 @@
 				774A4B9327FBCB1700385581 /* ItemsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		77D184EB27FCAD440063BF5E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				77813D5027F3C98F00685D70 /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		9B4284557A1F66940DCDE6A9 /* Frameworks */ = {

@@ -15,18 +15,14 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var descriptionTitleLabel: UILabel!
     
     @IBOutlet weak var imageDetail: UIImageView!
-    
+
     var img = UIImageView()
     var titleText: String = ""
   var desc = """
-    "Lepic - CONCESIONARIO OFICIAL RENAULT – CASA CENTRAL
-
-    ¡¡¡¡¡LEER CON ATENCION!!!!!
+    "¡¡¡¡¡LEER CON ATENCION!!!!!
     PRECIO PUBLICADO NO INCLUYE GASTOS
-
     UNIDAD DISPONIBLE EN CONCESIONARIO PARA ENTREGA INMEDIATA
     STOCK FÍSICO (Nro de Chasis y Motor)
-
     ---------------------------------------------------------------------------------
     (Precio publicado no incluye gastos)
     NUEVAS OPORTUNIDADES 2021
@@ -34,7 +30,6 @@ class DetailsViewController: UIViewController {
     ---------------------------------------------------------------------------------
 
     ENTREGA INMEDIATA - NO ES PLAN DE AHORRO
-
     UNIDAD DISPONIBLE EN CONCESIONARIO PARA ENTREGA INMEDIATA
 """
     var identity: String = "Vendedor con identidad verificada"
