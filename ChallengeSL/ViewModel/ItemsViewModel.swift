@@ -20,7 +20,7 @@ class ItemsViewModel {
     }
     var textValue : String = ""
     var item: String = ""
-    
+//    MARK: function to conect textField with categoryID
     func getSearchText(searchText: String){
         textValue = searchText
         service.getCategoryID(textValue: searchText, completion: {result in
@@ -28,14 +28,14 @@ class ItemsViewModel {
             case .failure(.noData):
                 print("Some error")
             case .success(let categoryID):
-                self.setFirstCategoryID2(categoryID: categoryID[0].categoryID)
+                self.setFirstCategoryID(categoryID: categoryID[0].categoryID)
                 print(categoryID)
             }
         })
         print("ViewModel is working")
     }
-    
-    func setFirstCategoryID2(categoryID: String){
+//    MARK: function to returns ids array
+    func setFirstCategoryID(categoryID: String){
         service.getHighlights(categoryID: categoryID, completion: {result in
             switch result {
             case .failure(.noData):
@@ -48,7 +48,7 @@ class ItemsViewModel {
             }
         })
     }
-    
+//    MARK: function to set ids and return multiple items
     func setWithMultiGet(ids: String){
         service.multigetItems(ids: ids, completion: {result in
             switch result {

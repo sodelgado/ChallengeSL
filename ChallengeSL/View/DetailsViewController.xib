@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="descriptionLabel" destination="2yT-aF-zVd" id="7xt-qq-t4m"/>
                 <outlet property="descriptionTitleLabel" destination="E8T-f8-w7R" id="84n-1l-Rln"/>
+                <outlet property="favoriteButton" destination="q0y-x3-jEc" id="1AW-cY-AbH"/>
                 <outlet property="identityLabel" destination="LpM-kI-U7P" id="194-2s-JzD"/>
                 <outlet property="imageDetail" destination="mNs-gq-YnD" id="lBr-6j-ghq"/>
                 <outlet property="nameLabel" destination="0jp-vh-Y3U" id="1ci-56-nwA"/>
@@ -63,7 +64,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title="Agregar a favoritos" titleAlignment="trailing"/>
                                             <connections>
-                                                <action selector="favoritesButton:" destination="-1" eventType="touchUpInside" id="IM3-1p-dAq"/>
+                                                <action selector="tapFavourite:" destination="-1" eventType="touchUpInside" id="aps-ol-qIW"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descriptionTitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-f8-w7R">

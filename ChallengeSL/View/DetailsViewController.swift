@@ -13,22 +13,17 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var identityLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var descriptionTitleLabel: UILabel!
-    
     @IBOutlet weak var imageDetail: UIImageView!
-
+    @IBOutlet weak var favoriteButton: UIButton!
     var img = UIImageView()
     var titleText: String = ""
   var desc = """
     "¡¡¡¡¡LEER CON ATENCION!!!!!
-    PRECIO PUBLICADO NO INCLUYE GASTOS
-    UNIDAD DISPONIBLE EN CONCESIONARIO PARA ENTREGA INMEDIATA
-    STOCK FÍSICO (Nro de Chasis y Motor)
     ---------------------------------------------------------------------------------
     (Precio publicado no incluye gastos)
     NUEVAS OPORTUNIDADES 2021
     (Deposito – Transferencia bancaria - Cheque Común)
     ---------------------------------------------------------------------------------
-
     ENTREGA INMEDIATA - NO ES PLAN DE AHORRO
     UNIDAD DISPONIBLE EN CONCESIONARIO PARA ENTREGA INMEDIATA
 """
@@ -48,5 +43,10 @@ class DetailsViewController: UIViewController {
         nameLabel.text = titleText
         imageDetail.image = img.image
         
+    }
+    
+    
+    @IBAction func tapFavourite(_ sender: Any) {
+    favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
     }
 }

@@ -23,7 +23,6 @@ class ItemTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         cityLabel.text = "Bs. As. "
         stateLabel.text = "Buenos Aires, Argentina"
-        // Configure the view for the selected state
     }
 }
 
