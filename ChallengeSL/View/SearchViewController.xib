@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WVs-SN-z6S">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5F-th-USo">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -54,7 +53,7 @@
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zma-aZ-8hY">
-                            <rect key="frame" x="0.0" y="44" width="414" height="672"/>
+                            <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                             <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <connections>
@@ -66,19 +65,14 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="WVs-SN-z6S" secondAttribute="trailing" id="1wE-X7-Jen"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WVs-SN-z6S" secondAttribute="bottom" constant="20" id="7h4-4i-PLz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WVs-SN-z6S" secondAttribute="bottom" id="7h4-4i-PLz"/>
                 <constraint firstItem="WVs-SN-z6S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SdB-zm-PN8"/>
                 <constraint firstItem="WVs-SN-z6S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eJr-8n-sFW"/>
             </constraints>
             <point key="canvasLocation" x="139" y="96"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
