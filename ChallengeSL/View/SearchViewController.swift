@@ -11,20 +11,25 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchTexField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     var viewModel = ItemsViewModel()
-    var resultItems: [Top20Element] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind()
         let textFieldCell = UINib(nibName: "ItemTableViewCell", bundle: nil)
-        viewModel.itemsList = resultItems
-        tableView.reloadData()
         self.tableView.register(textFieldCell, forCellReuseIdentifier: "itemCell")
+    }
+    func bind() {
+        viewModel.refreshData = { [weak self] in ()
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
 }
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return resultItems.count
+        return viewModel.itemsList.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -32,9 +37,13 @@ extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
-        let item = resultItems[indexPath.row]
+        let item = viewModel.itemsList[indexPath.row]
         cell.nameLabel.text = item.body.title
-        cell.priceLabel.text = "\(item.body.price)"
+        cell.priceLabel.text = "$ \(item.body.price)"
+        let url = URL(string: item.body.pictures[0].secureURL)!
+        if let data = try? Data(contentsOf: url) {
+            cell.img.image = UIImage(data: data)
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,6 +61,7 @@ extension SearchViewController: UITableViewDelegate {
 
 extension SearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        viewModel.getSearchText(searchText: searchTexField.text ?? "")
         return true
     }
 }

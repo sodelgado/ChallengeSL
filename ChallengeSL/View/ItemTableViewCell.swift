@@ -21,8 +21,9 @@ class ItemTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        cityLabel.text = "Bs. As. "
+        stateLabel.text = "Buenos Aires, Argentina"
         // Configure the view for the selected state
     }
-    
 }
+

@@ -33,5 +33,3 @@ struct Picture: Codable {
         case maxSize = "max_size"
     }
 }
-
-typealias Top20 = [Top20Element]
