@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BC98DA0AA4A38673ED0FF1E /* Pods_ChallengeSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AA5D7248DBF15624F11538 /* Pods_ChallengeSL.framework */; };
 		61407D01B2530481E0D26CD2 /* Pods_ChallengeSLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AA8A88D2126D0EC991D863 /* Pods_ChallengeSLTests.framework */; };
+		774A4B9427FBCB1700385581 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A4B9327FBCB1700385581 /* ItemsViewModel.swift */; };
 		77813D1327F37BE400685D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D1227F37BE400685D70 /* AppDelegate.swift */; };
 		77813D1527F37BE400685D70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D1427F37BE400685D70 /* SceneDelegate.swift */; };
 		77813D1727F37BE400685D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77813D1627F37BE400685D70 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2F70C7080CC5532E653E689A /* Pods-ChallengeSLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeSLTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeSLTests/Pods-ChallengeSLTests.release.xcconfig"; sourceTree = "<group>"; };
 		33AA5D7248DBF15624F11538 /* Pods_ChallengeSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774A4B9327FBCB1700385581 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		77813D0F27F37BE400685D70 /* ChallengeSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77813D1227F37BE400685D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77813D1427F37BE400685D70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		77AA504827FB594A0093337A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				774A4B9327FBCB1700385581 /* ItemsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				77813D5127F3C98F00685D70 /* DataService.swift in Sources */,
 				77813D1327F37BE400685D70 /* AppDelegate.swift in Sources */,
 				77813D4627F37DEB00685D70 /* SearchViewController.swift in Sources */,
+				774A4B9427FBCB1700385581 /* ItemsViewModel.swift in Sources */,
 				77813D1527F37BE400685D70 /* SceneDelegate.swift in Sources */,
 				77813D5727F4D9CD00685D70 /* CategoryPredictorModel.swift in Sources */,
 				77AA504427FB56940093337A /* HighlightsModel.swift in Sources */,
