@@ -3,4 +3,54 @@
    uuid = "74116E2E-9488-4D82-884E-DFD93F8814CD"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D8CCEE1-04E0-4A5A-8443-9227DDB0E916"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeSLTests/ChallengeSLTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D8CCEE1-04E0-4A5A-8443-9227DDB0E916 - 749403280901a1c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeSL.CategoryPredictor&gt;, ChallengeSL.DataService.NetworkError&gt;) -&gt; () in ChallengeSLTests.ChallengeSLTests.testExample() throws -&gt; ()"
+                  moduleName = "ChallengeSLTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sodelgado/Desktop/GitHub/ChallengeSL/ChallengeSLTests/ChallengeSLTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  uuid = "0D8CCEE1-04E0-4A5A-8443-9227DDB0E916 - 749403280901a1c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ChallengeSL.CategoryPredictor&gt;, ChallengeSL.DataService.NetworkError&gt;) -&gt; () in ChallengeSLTests.ChallengeSLTests.testExample() throws -&gt; ()"
+                  moduleName = "ChallengeSLTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sodelgado/Desktop/GitHub/ChallengeSL/ChallengeSLTests/ChallengeSLTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

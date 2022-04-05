@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-//   let highlights = try? newJSONDecoder().decode(Highlights.self, from: jsonData)
 // MARK: - Highlights
 struct Highlights: Codable {
     let queryData: QueryData

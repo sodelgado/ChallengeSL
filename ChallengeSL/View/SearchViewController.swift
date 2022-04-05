@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
         bind()
         let textFieldCell = UINib(nibName: "ItemTableViewCell", bundle: nil)
         self.tableView.register(textFieldCell, forCellReuseIdentifier: "itemCell")
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.orange]
     }
     func bind() {
         viewModel.refreshData = { [weak self] in ()
@@ -50,13 +51,17 @@ extension SearchViewController: UITableViewDataSource {
         return 145
     }
 }
-
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailsViewController()
-        print("que pasa aca")
+        let item = viewModel.itemsList[indexPath.row]
+        vc.titleText = item.body.title
+        let url = URL(string: item.body.pictures[0].secureURL)!
+        if let data = try? Data(contentsOf: url) {
+            vc.img.image = UIImage(data: data)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+}
 }
 
 extension SearchViewController: UITextFieldDelegate {

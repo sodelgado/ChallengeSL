@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class DataService {
-    let header: HTTPHeaders = [.authorization(bearerToken: "APP_USR-2357420951050600-040510-17d4758efc0c4958a8fb48a2942876a7-251000745")]
+    let header: HTTPHeaders = [.authorization(bearerToken: "APP_USR-2357420951050600-040515-0bc9979a37b62d9ad7fcd157ef04876d-251000745")]
     
     func getCategoryID(textValue: String, completion: @escaping (Result<[CategoryPredictor], NetworkError>)-> Void){
         let categoryURL: String = ("https://api.mercadolibre.com/sites/MLA/domain_discovery/search?q=\(textValue)")

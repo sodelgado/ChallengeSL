@@ -19,31 +19,32 @@ class ItemsViewModel {
         }
     }
     var textValue : String = ""
+    var item: String = ""
     
     func getSearchText(searchText: String){
         textValue = searchText
         service.getCategoryID(textValue: searchText, completion: {result in
             switch result {
             case .failure(.noData):
-                print("Algo no funciona")
+                print("Some error")
             case .success(let categoryID):
                 self.setFirstCategoryID2(categoryID: categoryID[0].categoryID)
-                print("parece que hasta aca anda")
+                print(categoryID)
             }
         })
-        print("ViewModel andando")
+        print("ViewModel is working")
     }
     
     func setFirstCategoryID2(categoryID: String){
         service.getHighlights(categoryID: categoryID, completion: {result in
             switch result {
             case .failure(.noData):
-                print("No llego la primer id")
+                print("No data")
             case .success(let highlights):
                 let highlightsID = highlights.content.map({ $0.id })
                 self.ids = highlightsID.joined(separator: ",")
                 self.setWithMultiGet(ids: self.ids)
-                print("parece que llegó a los highlights")
+                print(self.ids)
             }
         })
     }
@@ -52,15 +53,11 @@ class ItemsViewModel {
         service.multigetItems(ids: ids, completion: {result in
             switch result {
             case .failure(.noData):
-                print("No funca multiget")
+                print("No data")
             case .success(let items):
                 self.itemsList = items
-                print("Probando multiget")
+                print("Multiget is working")
             }
         })
     }
-    
-    
 }
-
-
