@@ -48,5 +48,8 @@ class DetailsViewController: UIViewController {
     
     @IBAction func tapFavourite(_ sender: Any) {
     favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        let alert = UIAlertController(title: "Favoritos", message: "Proximamente podrás guardar tus productos favoritos", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
